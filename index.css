@@ -1,0 +1,435 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+/**/
+html body .container{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container #footer {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+.container #end{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    margin-bottom: 50px;
+}
+html body {
+    height: 100%; 
+}
+.container {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -100px; 
+}
+.container #footer {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    background-color: #3d3d3d;
+    align-items: center;
+    color: #fff;
+    padding: 0;
+}
+/**/
+body{
+    color: #333333;
+}
+#navbar {
+    width: 100%;
+    height: 100px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 24px;
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 6px rgba(42, 42, 42, 0.5);
+    font-family:'NewYork';
+    font-weight: 550;
+}
+#navbar #img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: url('./profilo.jpg')center no-repeat;
+    background-size: cover;
+    background-position-y: top;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+#navbar ul li a:hover,
+#navbar ul li a.current {
+   text-decoration: underline;
+    color: #333333;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 50px;
+}
+#navbar li {
+    padding-left: 116px ;
+}
+#navbar h1{
+    color: #E97C1C;
+    font-size: 30px;
+    font-family: 'Delight Candles';
+}
+#temi{
+    font-size: 28px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#title{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    font-size: 26px;
+    font-family: sans-serif;
+}
+hr{
+    border: 1px solid #707070;
+}
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 80px;
+}
+.section img {
+    margin: 40px;
+    width: 720px;
+    height: 400px;
+}
+#first img {
+    box-shadow: 3px 3px 6px rgba(162, 162, 162, 1);
+}
+.text {
+    width: 500px;
+    word-wrap: break-word;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 550;
+    margin: 40px;
+}
+
+#second img{
+    box-shadow: -3px 3px 6px rgba(162, 162, 162, 1);
+}
+
+#third img {
+    box-shadow: 3px 3px 6px rgba(162, 162, 162, 1);
+}
+/*contatti*/
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact{
+    flex-direction: column;
+   text-align: center;
+    font-family: 'Delight Candles';
+    line-height: 3;
+}
+.contact h3{
+    font-size: 23px;
+}
+.contact i {
+    font-size: 80px;
+}
+.contact p{
+    font-size: 18px;
+}
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(162, 162, 162, 0.40);
+}
+::-webkit-scrollbar-thumb {
+    background: #222;
+}
+#sun{
+    opacity: 0;
+}
+#moon {
+    position: relative;
+    right: 20px;
+    opacity: 1;
+}
+/*Footer*/
+#footer {
+    background: #333;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+/*Info*/
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+.info h2{
+    font-size: 30px;
+    font-family: 'NewYork';
+    font-weight: 36px;
+}
+.IText{
+    font-size: 20px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+span{
+    text-decoration: underline;
+    color: #333333;
+}
+#slash{
+    margin-top: 100px;
+}
+/* Alcuni Laptop*/
+@media screen and (min-width:1200px) and (max-width:1500px) {
+    #navbar li {
+        padding-left: 2.5rem ;
+    }
+    #navbar #img{
+        margin: 10px;
+    }
+    .section img {
+        margin: 1rem
+    }
+    .text{
+        margin: 8px;
+        line-height: 1.3;
+    }
+    #navbar ul{
+        margin-right: 10px;
+    }
+}
+/*Mobile*/
+@media screen and (max-width:500px) {
+    /*Navbar*/
+    #navbar{
+        font-size: 0.7rem;
+    }
+    #navbar #img{
+        width: 30px;
+        height: 30px;
+        margin: 0 10px 0 20px;
+    }
+    #navbar ul{
+        margin-right: 10px;
+    }
+    #navbar li {
+        padding-left: 0.4rem ;
+    }
+    #navbar h1{
+        font-size: 15px;
+    }
+    #temi{
+        width: 3rem;
+        font-size: 15px;
+    }
+    /*Home*/
+    #title{
+        font-size: 16px;
+    }
+    .section{
+        margin: 40px;
+    }
+    .section img {
+        width: 60%;
+        height: 40%;
+        margin: 15px
+    }
+    .text{
+        margin: 8px;
+        line-height: 1.3;
+        font-size: 12px;
+        font-weight: 550;
+    }
+    /*Contatti*/
+    #container{
+        flex-direction: column;
+    }
+    .contact{
+        margin: 20px;
+    }
+    .contact h3{
+        font-size: 20px;
+    }
+    .contact p{
+        font-size: 18px;
+    }
+    /*Info*/
+    .info{
+        margin-top: 40px;
+    }
+    .info h2{
+        font-size: 20px;
+    }
+    .IText{
+        font-size: 16px;
+        width: 400px;
+    }
+}
+/*Tablet*/
+@media screen and (min-width:501px) and (max-width:1024px) {
+    #navbar{
+        font-size: 16px;
+    }
+    #navbar ul{
+        margin-right: 10px;
+    }
+    #navbar li {
+        padding-left: 1rem ;
+    }
+    #navbar h1 {
+        font-size: 18px;
+    }
+    #navbar #img{
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    #temi{
+        width: 3rem;
+    }
+    /*Home*/
+    #title{
+        font-size: 20px;
+    }
+    .section{
+        margin: 40px;
+    }
+    .section img {
+        width: 40%;
+        height: 20%;
+        margin: 15px
+    }
+    .text{
+        margin: 8px;
+        line-height: 1.3;
+        font-size: 12px;
+        font-weight: 550;
+    }
+     /*Contatti*/
+    .contact{
+        margin: 20px;
+    }
+    .contact h3{
+        font-size: 18px;
+    }
+    .contact i{
+        font-size: 70px
+    }
+    .contact p{
+        font-size: 16px;
+    }
+    /*Info*/
+    .info{
+        margin-top: 40px;
+    }
+    .info h2{
+        font-size: 24px;
+    }
+    .IText{
+        font-size: 18px;
+        width: 500px;
+    }
+}
+/*Tablet più grandi*/
+/*
+@media  screen and (min-width:800px) and (max-width:1024px) {
+    #navbar{
+        font-size: 20px;
+    }
+    #navbar ul{
+        margin-right: 10px;
+    }
+    #navbar li {
+        padding-left: 16px ;
+    }
+    #navbar h1 {
+        font-size: 24px;
+    }
+    #navbar #img{
+        width: 60px;
+        height: 60px;
+        margin-left: 10px;
+    }
+    #temi{
+        width: 60px;
+    }
+    /*Home*/
+    /*
+    #title{
+        font-size: 20px;
+    }
+    .section{
+        margin: 40px;
+    }
+    .section img {
+        width: 480px;
+        height: 320px;
+        margin: 40px
+    }
+    .text{
+        margin: 8px;
+        line-height: 1.3;
+        font-size: 12px;
+        font-weight: 550;
+    }
+     /*Contatti*/
+     /*
+    .contact{
+        margin: 20px;
+    }
+    .contact h3{
+        font-size: 18px;
+    }
+    .contact i{
+        font-size: 70px
+    }
+    .contact p{
+        font-size: 16px;
+    }
+    /*Info*/
+    /*
+    .info{
+        margin-top: 40px;
+    }
+    .info h2{
+        font-size: 24px;
+    }
+    .IText{
+        font-size: 18px;
+        width: 500px;
+    }
+}
+*/

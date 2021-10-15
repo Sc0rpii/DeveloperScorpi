@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family= Crimson+Text:ital@1 & display=swap" rel="stylesheet">
+    <link id="mystylesheet" rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://kit.fontawesome.com/be0dba7fac.js" crossorigin="anonymous"></script>
+    <title>Recensioni</title>
+</head>
+<body>
+
+    <!--Navbar-->
+    <header>
+        <nav>
+            <div id="navbar">
+                <div id="img"></div>
+                <a href="index.html"><h1>DeveloperScorpi</h1></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Info.html">Info</a></li>
+                    <li><a href="#end">Contattami</a></li>
+                    <li><a class="current" href="recensioni.html">Recensioni</a></li>
+                </ul>
+                <div id="temi">
+                    <div id="sun" onclick="swapStyle('index.css')"><i class="fas fa-sun"></i></div>
+                    <div id="moon" onclick="swapStyle('dark.css')"><i class="fas fa-moon"></i></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Body-->
+
+    <div class="container">
+        <!--Contattami-->
+    <section id="end">
+        <hr id="slash">
+        <div id="container">
+            <div class="contact" id="instagram">
+                <a href="https://www.instagram.com/developerscorpi/" target="_blank"><h3>Instagram</h3></a>
+                <a href="https://www.instagram.com/developerscorpi/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/developerscorpi/" target="_blank"><p>developerscorpi</p></a>
+            </div>
+            <div class="contact" id="email">
+               <h3>E-mail</h3>
+               <i class="far fa-envelope"></i>
+               <p>developerscorpii@gmail.com</p>
+            </div>
+            <div class="contact" id="twitter">
+                <a href="https://twitter.com/Scorpii26544689" target="_blank"><h3>Twitter</h3></a>
+                <a href="https://twitter.com/Scorpii26544689" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://twitter.com/Scorpii26544689" target="_blank"><p>@Scorpii26544689</p></a>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+        <footer id="footer">DeveloperScorpi &copy; 2021</footer>
+    </div>
+    
+    <!--Script-->
+    <script src="index.js"></script>
+    <script type="text/javascript">
+        var setTheme = localStorage.getItem('theme');
+        console.log('theme:', setTheme);
+    if (setTheme == null){
+      swapStyle('index.css');
+    }else{
+      swapStyle(setTheme);
+    }
+    
+    function swapStyle(sheet){
+      document.getElementById('mystylesheet').href = sheet
+      localStorage.setItem('theme', sheet)
+    }
+    </script>
+    
+</body>
+</html>
