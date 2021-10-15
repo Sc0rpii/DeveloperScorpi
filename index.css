@@ -233,6 +233,10 @@ span{
 }
 /*Mobile*/
 @media screen and (max-width:500px) {
+    #center{
+        width: 100%;
+        height: 100%;
+    }
     /*Navbar*/
     #navbar{
         font-size: 0.7rem;
