@@ -144,9 +144,6 @@ hr{
     opacity: 0;
 }
 /*Footer*/
-#end{
-    top: 20%;
-}
 #footer {
     height: 48px;
     display: flex;
@@ -276,13 +273,8 @@ span{
         font-size: 16px;
         width: 350px;
     }
-    .container #end{
-        position:absolute;
-        bottom:0;
-        left:0;
-        width:100%;
-        margin-top: 500px;
-        margin-bottom: 50px;
+    #center{
+        height: 100%;
     }
 }
 /*Tablet*/
